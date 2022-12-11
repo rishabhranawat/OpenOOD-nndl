@@ -61,3 +61,26 @@ class ODINPostprocessor(BasePostprocessor):
 
     def get_hyperparam(self):
         return [self.temperature, self.noise]
+
+
+from wilds import get_dataset
+from wilds.common.data_loaders import get_train_loader
+import torchvision.transforms as transforms
+
+dataset = get_dataset(dataset="iwildcam", download=True)
+
+# +
+# dataset = get_dataset(dataset="iwildcam", download=True)
+
+# # Get the training set
+train_data = dataset.get_subset(
+    "id_test",
+    transform=transforms.Compose(
+        [transforms.Resize((448, 448)), transforms.ToTensor()]
+    ),
+)
+# -
+
+len(train_data)
+
+
