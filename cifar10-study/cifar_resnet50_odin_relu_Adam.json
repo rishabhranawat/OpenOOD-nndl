@@ -1,0 +1,1 @@
+{"0": {"dataset": "cifar", "FPR@95": "92.84", "AUROC": "57.67", "AUPR_IN": "59.76", "AUPR_OUT": "55.11", "CCR_4": "0.00", "CCR_3": "0.31", "CCR_2": "2.07", "CCR_1": "11.14", "ACC": "31.88", "optimizer_type": "Adam", "activation_function_type": "relu", "postprocessor_type": "odin"}}
