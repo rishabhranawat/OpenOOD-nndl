@@ -8,6 +8,7 @@ data/
 results/
 checkpoints/
 ipynb_checkpoints/
+models/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
